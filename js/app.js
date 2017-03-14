@@ -14,9 +14,15 @@ for (let i=0;i<25;i++){
   const item = $('<div class="card" style="height:'+Math.floor((Math.random() * 200) + 125)+'px"><span class="card-content">'+(i+1)+'</span></div>');
   extraItems.push(item);
 }
+<<<<<<< HEAD
 extraItems.forEach(item => {
   setTimeout(masonry.appendItems.bind(masonry, [item]), 2000);
 })
 // setTimeout(() => {
 //   masonry.appendItems(extraItems);
 // }, 5000)
+=======
+setTimeout(() => {
+  masonry.appendItems(extraItems);
+}, 5000)
+>>>>>>> master
